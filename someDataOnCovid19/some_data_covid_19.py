@@ -6,5 +6,7 @@
 # print(pd.__version__)         # Verifica la instalación desde el archivo py
 # deactivate                    # Desactiva el entorno virtual
 
-import pandas as pd
+# link para descargar el archivo a explotar:
+# https://covid.ourworldindata.org/data/owid-covid-data.csv
 
+import pandas as pd

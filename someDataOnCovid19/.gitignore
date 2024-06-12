@@ -1,2 +1,5 @@
 # ignoring virtual enviorement folder
 venv/
+
+# ignorando la carga a github del csv por su tamaño
+owid-covid-data.csv

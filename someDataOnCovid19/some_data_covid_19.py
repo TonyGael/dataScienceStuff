@@ -36,7 +36,10 @@ def preprocess_data(df, country):
 
 def analyze_data(df):
     """
-    Realiza análisis de datos usando pandas."""
+    Realiza análisis de datos usando pandas.
+    
+    Perform data analysis using pandas.
+    """
     results = {}
 
     # Total cases and deaths

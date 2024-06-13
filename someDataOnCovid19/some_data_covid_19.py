@@ -26,18 +26,25 @@ def load_data(file_path):
 def preprocess_data(df, country):
     """
     Preprocesa los datos para un país específico.
-    
     Preprocesses data for a specific country.
     """
+    
+    # Convierte la columna 'date' a un formato de fecha y hora
+    # Converts the 'date' column to a datetime format
     df['date'] = pd.to_datetime(df['date'])
+    # Filtra el DataFrame para incluir solo las filas donde la columna 'location' es igual al país especificado
+    # Filters the DataFrame to include only rows where the 'location' column matches the specified country
     country_df = df[df['location'] == country]
+    # Llena los valores faltantes (NaN) con 0 en el DataFrame filtrado
+    # Fills missing values (NaN) with 0 in the filtered DataFrame
     country_df.fillna(0, inplace=True)
+    # Devuelve el DataFrame filtrado y preprocesado
+    # Returns the filtered and preprocessed DataFrame
     return country_df
 
 def analyze_data(df):
     """
     Realiza análisis de datos usando pandas.
-    
     Perform data analysis using pandas.
     """
     results = {}
